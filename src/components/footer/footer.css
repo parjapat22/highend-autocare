@@ -1,0 +1,13 @@
+.footer__section {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

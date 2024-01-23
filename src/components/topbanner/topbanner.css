@@ -25,7 +25,7 @@
   align-items: flex-start;
 }
 
-.banner__hours {
+.banner__column {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -42,12 +42,6 @@
   font-size: 1.3rem;
 }
 
-.banner__address {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .banner__address-icon {
   display: flex;
   align-items: center;
@@ -62,12 +56,6 @@
 
 .banner__address p {
   font-size: 1.2rem;
-}
-
-.banner__contact {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .banner__contact-icon {

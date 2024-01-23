@@ -14,30 +14,30 @@ const TopBanner = () => {
         </div>
 
         <div className="banner__timing">
-          <div className="banner__hours">
+          <div className="banner__column">
             <div className="banner__hours-icon">
               <FaRegClock />
             </div>
-            <div>
+            <div className="banner__hours">
               <p>Mon-Fri: 8:00am - 5:00pm</p>
             </div>
           </div>
 
-          <div className="banner__hours">
+          <div className="banner__column">
             <div className="banner__hours-icon">
               <FaRegClock />
             </div>
-            <div>
+            <div className="banner__hours">
               <p>Saturday: 8:00am - 2:00pm</p>
             </div>
           </div>
         </div>
 
-        <div className="banner__address">
+        <div className="banner__column">
           <div className="banner__address-icon">
             <FaLocationDot />
           </div>
-          <div>
+          <div className="banner__address">
             <a
               href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
               target="_blank"
@@ -49,11 +49,11 @@ const TopBanner = () => {
           </div>
         </div>
 
-        <div className="banner__contact">
+        <div className="banner__column">
           <div className="banner__contact-icon">
             <FaPhone />
           </div>
-          <div>
+          <div className="banner__contact">
             <p>0466 232 206</p>
           </div>
         </div>
