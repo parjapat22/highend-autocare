@@ -1,24 +1,30 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import "./navbar.css";
+import Logo from "../../assets/logo.png";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <section className="container">
-      <div>
-        <ul>
+    <nav>
+      <div className="container nav__container">
+        <a href="/" className="nav__logo">
+          <img src={Logo} alt="logo" />
+        </a>
+
+        <ul className="nav__menu">
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/about">About us</a>
+            <a href="/services">Services</a>
           </li>
           <li>
-            <NavLink to="/contact">Contact us</NavLink>
+            <a href="/contact">Contact us</a>
           </li>
         </ul>
       </div>
-    </section>
+    </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;

@@ -1,10 +1,11 @@
 import React from "react";
+import "./home.css";
 
 const Home = () => {
   return (
-    <section className="container">
-      <div>
-        <h1>Welcome to the world of Geeks!</h1>
+    <section className="home__section">
+      <div className="container">
+        <h1>Welcome to the society of web development!</h1>
       </div>
     </section>
   );

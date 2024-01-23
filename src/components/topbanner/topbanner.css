@@ -1,0 +1,82 @@
+.banner__section {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+}
+
+.banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__meta-icon {
+  display: flex;
+  align-items: center;
+  color: blue;
+  font-size: 3rem;
+}
+
+.banner__timing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.banner__hours {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner__hours-icon {
+  display: flex;
+  align-items: center;
+  color: blue;
+  font-size: 1.3rem;
+}
+
+.banner__hours p {
+  font-size: 1.3rem;
+}
+
+.banner__address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner__address-icon {
+  display: flex;
+  align-items: center;
+  color: blue;
+  font-size: 2.5rem;
+}
+
+.banner__address a {
+  color: black;
+  text-decoration: none;
+}
+
+.banner__address p {
+  font-size: 1.2rem;
+}
+
+.banner__contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner__contact-icon {
+  display: flex;
+  align-items: center;
+  color: blue;
+  font-size: 2rem;
+}
+
+.banner__contact p {
+  font-size: 2rem;
+}
