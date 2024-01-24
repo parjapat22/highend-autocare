@@ -40,8 +40,10 @@ body {
   line-height: 1.6;
 }
 
+nav,
+footer,
 section {
-  width: 100vw;
+  width: 100%;
   transition: var(--transition);
 }
 

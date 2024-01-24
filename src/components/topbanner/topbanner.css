@@ -1,8 +1,4 @@
 .banner__section {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: var(--color-primary);
 }
 
@@ -19,7 +15,7 @@
   font-size: 3rem;
 }
 
-.banner__timing {
+.banner__hours {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,7 +34,7 @@
   font-size: 1.3rem;
 }
 
-.banner__hours p {
+.banner__hours-text p {
   font-size: 1.3rem;
 }
 
@@ -49,12 +45,12 @@
   font-size: 2.5rem;
 }
 
-.banner__address a {
+.banner__address-text a {
   color: black;
   text-decoration: none;
 }
 
-.banner__address p {
+.banner__address-text p {
   font-size: 1.2rem;
 }
 
@@ -65,6 +61,6 @@
   font-size: 2rem;
 }
 
-.banner__contact p {
+.banner__contact-text p {
   font-size: 2rem;
 }
