@@ -63,3 +63,17 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+    max-width: var(--max-width-tablet);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+    max-width: var(--max-width-mobile);
+  }
+}

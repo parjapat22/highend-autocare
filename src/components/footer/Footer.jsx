@@ -15,7 +15,9 @@ const Footer = () => {
           {/* footer row 1 column 1 */}
           <div className="footer__col1">
             <div className="footer__logo">
-              <img src={Logo} alt="logo" />
+              <a href="/">
+                <img src={Logo} alt="logo" />
+              </a>
             </div>
 
             <div className="footer__text">
@@ -29,7 +31,13 @@ const Footer = () => {
 
             <div className="footer__social">
               <div className="footer__social-icon">
-                <FaFacebook />
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
               </div>
               <div className="footer__social-text">
                 <h2>Facebook</h2>
@@ -45,8 +53,14 @@ const Footer = () => {
                 <FaLocationDot />
               </div>
               <div className="footer__address-text">
-                <p>71 Kremzow Road, Brendale</p>
-                <p>Brisbane, QLD, 4500</p>
+                <a
+                  href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>71 Kremzow Road, Brendale</p>
+                  <p>Brisbane, QLD, 4500</p>
+                </a>
               </div>
             </div>
 
