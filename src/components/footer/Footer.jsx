@@ -10,8 +10,9 @@ import { FaRegClock } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer>
-      <section className="footer__row1">
-        <div className="container footer__row1__container">
+      {/* footer row 1 */}
+      <section className="container-max footer__row1">
+        <div className="container footer__row1__div">
           {/* footer row 1 column 1 */}
           <div className="footer__col1">
             <div className="footer__logo">
@@ -48,6 +49,8 @@ const Footer = () => {
           {/* footer row 1 column 2 */}
           <div className="footer__col2">
             <h2>Our Information</h2>
+
+            {/* address */}
             <div className="footer__social">
               <div className="footer__col2-icon">
                 <FaLocationDot />
@@ -64,6 +67,7 @@ const Footer = () => {
               </div>
             </div>
 
+            {/* contact */}
             <div className="footer__social">
               <div className="footer__col2-icon">
                 <FaPhone />
@@ -73,6 +77,7 @@ const Footer = () => {
               </div>
             </div>
 
+            {/* email */}
             <div className="footer__social">
               <div className="footer__col2-icon">
                 <HiOutlineMail />
@@ -82,11 +87,12 @@ const Footer = () => {
               </div>
             </div>
 
+            {/* workshop hours */}
             <div className="footer__social">
               <div className="footer__col2-icon">
                 <FaRegClock />
               </div>
-              <div className="footer__timing-text">
+              <div className="footer__hours-text">
                 <p>Mon - Fri: 8:00am - 5:00pm</p>
               </div>
             </div>
@@ -95,7 +101,7 @@ const Footer = () => {
               <div className="footer__col2-icon">
                 <FaRegClock />
               </div>
-              <div className="footer__timing-text">
+              <div className="footer__hours-text">
                 <p>Saturday: 8:00am - 2:00pm</p>
               </div>
             </div>
@@ -104,8 +110,8 @@ const Footer = () => {
       </section>
 
       {/* footer row 2 */}
-      <section className="footer__row2">
-        <div className="container footer__row2__container">
+      <section className="container-max footer__row2">
+        <div className="container footer__row2__div">
           <p>Copyright &copy; 2021 Highend Autocare</p>
           <p>Developed by Basant Parjapat</p>
         </div>

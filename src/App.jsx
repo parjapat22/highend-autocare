@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TopBanner from "./components/topbanner/TopBanner";
 import NavBar from "./components/navbar/NavBar";
-import Home from "./components/home/Home";
-import Services from "./components/services/Services";
-import Contact from "./components/contact/Contact";
+import Home from "./pages/home/Home";
+import Services from "./pages/services/Services";
+import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 const App = () => {

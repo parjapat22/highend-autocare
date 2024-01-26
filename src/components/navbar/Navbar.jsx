@@ -5,12 +5,14 @@ import Logo from "../../assets/logo.png";
 
 const NavBar = () => {
   return (
-    <nav>
-      <div className="container nav__container">
+    <nav className="container-max">
+      <div className="container nav__div">
+        {/* nav menu */}
         <a href="/" className="nav__logo">
           <img src={Logo} alt="logo" />
         </a>
 
+        {/* nav menu */}
         <ul className="nav__menu">
           <li>
             <a href="/">Home</a>
