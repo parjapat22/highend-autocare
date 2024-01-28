@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopBanner from "./components/topbanner/TopBanner";
 import NavBar from "./components/navbar/NavBar";
 import Home from "./pages/home/Home";
@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <TopBanner />
       <NavBar />
 
@@ -20,7 +20,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
 

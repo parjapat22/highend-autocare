@@ -1,0 +1,14 @@
+.services__gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  grid-row-gap: 5rem;
+}
+
+.services__gallery-card {
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}

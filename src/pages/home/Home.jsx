@@ -4,9 +4,8 @@ import Car from "../../assets/homepage_car.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaBusinessTime } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
-import ATS from "../../assets/auto-transmission-service.jpg";
-import brake from "../../assets/brake repair.jpg";
-import Logo from "../../assets/logo.png";
+import ServicesGallery from "../../components/services-gallery/ServicesGallery";
+import CallbackForm from "./CallbackForm";
 
 const Home = () => {
   return (
@@ -77,40 +76,35 @@ const Home = () => {
               automobiles. We use quality parts to comply with your new car log
               book service & warranty.
             </p>
-            <button type="button">Find more</button>
+            <button type="button" className="btn">
+              Find more
+            </button>
           </div>
 
           {/* home services gallery */}
-          <div className="home__gallery">
-            <div className="home__gallery-card">
-              <img src={ATS} alt="logo" />
-              <h3>Auto Transmission Service</h3>
-            </div>
+          <ServicesGallery />
+        </div>
+      </section>
 
-            <div className="home__gallery-card">
-              <img src={brake} alt="logo" />
-              <h3>Brake Repair Pads & Rotors</h3>
-            </div>
+      {/* home page request call back section */}
+      <section className="container-max home__section-callback">
+        <div className="container home__div-callback">
+          {/* call back text */}
+          <div className="callback-text">
+            <h2>Why Choose Us</h2>
+            <p>
+              Our amazing team of Highend Autocare is highly experienced and
+              qualified to provide you best automotive service. We, Bagi and
+              Harry are fully qualified mechanics with over 12 years of
+              experience in the automotive industry. We are passionate to help
+              the local community with reasonable prices and high-quality work.
+            </p>
+          </div>
 
-            <div className="home__gallery-card">
-              <img src={Logo} alt="logo" />
-              <h3>COI for Uber, Taxi & Trucks</h3>
-            </div>
-
-            <div className="home__gallery-card">
-              <img src={Logo} alt="logo" />
-              <h3>System Diagnosis & Repair</h3>
-            </div>
-
-            <div className="home__gallery-card">
-              <img src={Logo} alt="logo" />
-              <h3>Log Book Service</h3>
-            </div>
-
-            <div className="home__gallery-card">
-              <img src={Logo} alt="logo" />
-              <h3>Tyres & Wheel Balancing</h3>
-            </div>
+          {/* callback form */}
+          <div className="callback-form">
+            <h2>Request Callback</h2>
+            <CallbackForm />
           </div>
         </div>
       </section>
