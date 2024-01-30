@@ -1,18 +1,19 @@
-nav {
+.navbar-max {
   /* position: fixed; */
   /* top: 0; */
   /* left: 0; */
+  padding: 0.5rem 0;
   background: #ffeedd;
 }
 
-.nav__div {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav__logo {
-  width: 16rem;
+  width: 15%;
 }
 
 .nav__menu {
@@ -27,7 +28,6 @@ nav {
 }
 
 .nav__menu a {
-  /* color: #ffffff; */
   font-size: 1.5rem;
   text-decoration: none;
 }

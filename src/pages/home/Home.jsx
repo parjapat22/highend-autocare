@@ -5,14 +5,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaBusinessTime } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import ServicesGallery from "../../components/services-gallery/ServicesGallery";
-import CallbackForm from "./CallbackForm";
+import CallbackForm from "../../components/forms/CallbackForm";
 
 const Home = () => {
   return (
     <section>
       {/* home page header section */}
-      <section className="container-max">
-        <div className="container home__div-header">
+      <section className="container-max home-max__header">
+        <div className="container home__header">
           <h1>We Care About Your Car</h1>
 
           <p>
@@ -22,18 +22,18 @@ const Home = () => {
           </p>
 
           {/* car image */}
-          <div className="home__img">
+          <div className="home__header-img">
             <img src={Car} alt="car" />
           </div>
         </div>
       </section>
 
       {/* home page key info section */}
-      <section className="container-max home__section-info">
-        <div className="container home__div-info">
+      <section className="container-max home-max__info">
+        <div className="container home__info">
           {/* address */}
           <div className="home__address">
-            <div className="home__key-icon">
+            <div className="home__info-icon">
               <FaLocationDot />
             </div>
             <h2>Address</h2>
@@ -43,7 +43,7 @@ const Home = () => {
 
           {/* hours */}
           <div className="home__hours">
-            <div className="home__key-icon">
+            <div className="home__info-icon">
               <FaBusinessTime />
             </div>
             <h2>Working Hours</h2>
@@ -54,7 +54,7 @@ const Home = () => {
 
           {/* appointment */}
           <div className="home__appointment">
-            <div className="home__key-icon">
+            <div className="home__info-icon">
               <FaPhone />
             </div>
             <h2>Make an appointment</h2>
@@ -66,8 +66,8 @@ const Home = () => {
       </section>
 
       {/* home page services section */}
-      <section className="container-max">
-        <div className="container home__div-services">
+      <section className="container-max home-max__services">
+        <div className="container home__services">
           <h2>Our Services</h2>
 
           <div className="home__services-text">
@@ -87,8 +87,8 @@ const Home = () => {
       </section>
 
       {/* home page request call back section */}
-      <section className="container-max home__section-callback">
-        <div className="container home__div-callback">
+      <section className="container-max home-max__callback">
+        <div className="container home__callback">
           {/* call back text */}
           <div className="callback-text">
             <h2>Why Choose Us</h2>

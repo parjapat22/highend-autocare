@@ -19,7 +19,7 @@ const CallbackForm = () => {
   return (
     <form onSubmit={handleSubmit} className="form__callback">
       <label>
-        Your name
+        Your name *
         <input
           type="text"
           name="username"
@@ -31,7 +31,7 @@ const CallbackForm = () => {
       </label>
 
       <label>
-        Your email
+        Your email *
         <input
           type="text"
           name="email"
@@ -42,7 +42,7 @@ const CallbackForm = () => {
       </label>
 
       <label>
-        Subject
+        Subject *
         <input
           type="text"
           name="subject"
@@ -53,14 +53,14 @@ const CallbackForm = () => {
       </label>
 
       <label>
-        Your message
+        Your message *
         <textarea
           type="text"
           name="message"
           value={inputs.message || ""}
           onChange={handleChange}
           rows="15"
-          cols="50"
+          cols="60"
           placeholder="Write your query here"
           required
         />

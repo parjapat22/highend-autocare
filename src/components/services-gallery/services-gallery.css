@@ -2,13 +2,17 @@
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
-  grid-row-gap: 5rem;
+  gap: 3rem;
 }
 
 .services__gallery-card {
-  width: 20rem;
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.services__gallery-card img {
+  height: 100%;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopBanner from "./components/topbanner/TopBanner";
-import NavBar from "./components/navbar/NavBar";
+import NavBar from "./components/navbar/NavBa";
 import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";

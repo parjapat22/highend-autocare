@@ -1,0 +1,16 @@
+.form__callback {
+  padding: 1rem;
+  background: #6b86d0;
+}
+
+.form__callback label {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__callback input,
+.form__callback textarea {
+  border: 1px solid #444;
+}

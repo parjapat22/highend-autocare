@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer>
       {/* footer row 1 */}
-      <section className="container-max footer__row1">
-        <div className="container footer__row1__div">
+      <section className="container-max footer-max__row1">
+        <div className="container footer__row1">
           {/* footer row 1 column 1 */}
           <div className="footer__col1">
             <div className="footer__logo">
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
 
             <div className="footer__social">
-              <div className="footer__social-icon">
+              <div className="icon-link footer__col1-icon">
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
@@ -40,6 +40,7 @@ const Footer = () => {
                   <FaFacebook />
                 </a>
               </div>
+
               <div className="footer__social-text">
                 <h2>Facebook</h2>
               </div>
@@ -110,10 +111,10 @@ const Footer = () => {
       </section>
 
       {/* footer row 2 */}
-      <section className="container-max footer__row2">
-        <div className="container footer__row2__div">
-          <p>Copyright &copy; 2021 Highend Autocare</p>
-          <p>Developed by Basant Parjapat</p>
+      <section className="container-max footer-max__row2">
+        <div className="container footer__row2">
+          <small>Copyright &copy; 2021 Highend Autocare</small>
+          <small>Developed by Basant Parjapat</small>
         </div>
       </section>
     </footer>

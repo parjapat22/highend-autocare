@@ -7,14 +7,14 @@ import { FaPhone } from "react-icons/fa6";
 
 const TopBanner = () => {
   return (
-    <section className="container-max banner__section">
-      <div className="container banner__div">
-        {/* column 1 */}
+    <section className="container-max banner-max">
+      <div className="container banner">
+        {/* column 1 meta icon*/}
         <div className="banner__meta-icon">
           <FaFacebook />
         </div>
 
-        {/* column 2 */}
+        {/* column 2 workshop hours*/}
         <div className="banner__hours">
           <div className="banner__column">
             <div className="banner__hours-icon">
@@ -35,7 +35,7 @@ const TopBanner = () => {
           </div>
         </div>
 
-        {/* column 3 */}
+        {/* column 3 workshop address*/}
         <div className="banner__column">
           <div className="banner__address-icon">
             <FaLocationDot />
@@ -52,7 +52,7 @@ const TopBanner = () => {
           </div>
         </div>
 
-        {/* column 4 */}
+        {/* column 4 contact number*/}
         <div className="banner__column">
           <div className="banner__contact-icon">
             <FaPhone />
