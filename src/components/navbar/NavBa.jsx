@@ -1,5 +1,5 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../../assets/nav-logo.png";
 
@@ -16,13 +16,13 @@ const NavBa = () => {
           {/* nav menu */}
           <ul className="nav__menu">
             <li>
-              <a href="/">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <NavLink to="/services">Services</NavLink>
             </li>
             <li>
-              <a href="/contact">Contact us</a>
+              <NavLink to="/contact">Contact us</NavLink>
             </li>
           </ul>
         </div>

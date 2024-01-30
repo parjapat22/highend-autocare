@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import "./home.css";
 import Car from "../../assets/homepage_car.png";
 import { FaLocationDot } from "react-icons/fa6";
@@ -8,6 +9,10 @@ import ServicesGallery from "../../components/services-gallery/ServicesGallery";
 import CallbackForm from "../../components/forms/CallbackForm";
 
 const Home = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <section>
       {/* home page header section */}
