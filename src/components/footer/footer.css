@@ -1,4 +1,4 @@
-.footer-max__row1 {
+.footer__row1-max {
   padding: 1rem 0;
   background: var(--color-primary);
 }
@@ -62,7 +62,7 @@
   text-decoration: none;
 }
 
-.footer-max__row2 {
+.footer__row2-max {
   padding: 0.5rem 0;
 }
 

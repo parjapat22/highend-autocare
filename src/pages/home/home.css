@@ -1,4 +1,4 @@
-.home-max__header {
+.home__header-max {
   padding: 5rem 0;
 }
 
@@ -18,7 +18,7 @@
   padding: 3.5rem 0 0 0;
 }
 
-.home-max__info {
+.home__info-max {
   padding: 5rem 0;
   background: var(--color-primary);
 }
@@ -41,7 +41,7 @@
   font-size: 1.3rem;
 }
 
-.home-max__services {
+.home__services-max {
   padding: 5rem 0;
 }
 
@@ -52,7 +52,7 @@
   justify-content: space-between;
 }
 
-.home-max__callback {
+.home__callback-max {
   padding: 5rem 0;
   background-image: url(../../assets/callback.jpg);
   background-position: center center;
@@ -67,13 +67,13 @@
   justify-content: space-between;
 }
 
-.callback-text {
+.home__callback-text {
   width: 40%;
   color: #f4f4f4;
   font-size: 1.1vw;
 }
 
-.callback-form h2 {
+.home__callback-form h2 {
   padding: 0.5rem 0;
   background-color: #f4f4f4;
   text-align: center;

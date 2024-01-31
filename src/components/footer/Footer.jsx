@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       {/* footer row 1 */}
-      <section className="container-max footer-max__row1">
+      <section className="container-max footer__row1-max">
         <div className="container footer__row1">
           {/* footer row 1 column 1 */}
           <div className="footer__col1">
@@ -111,7 +111,7 @@ const Footer = () => {
       </section>
 
       {/* footer row 2 */}
-      <section className="container-max footer-max__row2">
+      <section className="container-max footer__row2-max">
         <div className="container footer__row2">
           <small>Copyright &copy; 2021 Highend Autocare</small>
           <small>Developed by Basant Parjapat</small>

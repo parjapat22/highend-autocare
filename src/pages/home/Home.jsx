@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <section>
       {/* home page header section */}
-      <section className="container-max home-max__header">
+      <section className="container-max home__header-max">
         <div className="container home__header">
           <h1>We Care About Your Car</h1>
 
@@ -34,10 +34,10 @@ const Home = () => {
       </section>
 
       {/* home page key info section */}
-      <section className="container-max home-max__info">
+      <section className="container-max home__info-max">
         <div className="container home__info">
           {/* address */}
-          <div className="home__address">
+          <div className="home__info-address">
             <div className="home__info-icon">
               <FaLocationDot />
             </div>
@@ -47,7 +47,7 @@ const Home = () => {
           </div>
 
           {/* hours */}
-          <div className="home__hours">
+          <div className="home__info-hours">
             <div className="home__info-icon">
               <FaBusinessTime />
             </div>
@@ -58,7 +58,7 @@ const Home = () => {
           </div>
 
           {/* appointment */}
-          <div className="home__appointment">
+          <div className="home__info-appointment">
             <div className="home__info-icon">
               <FaPhone />
             </div>
@@ -71,7 +71,7 @@ const Home = () => {
       </section>
 
       {/* home page services section */}
-      <section className="container-max home-max__services">
+      <section className="container-max home__services-max">
         <div className="container home__services">
           <h2>Our Services</h2>
 
@@ -92,10 +92,10 @@ const Home = () => {
       </section>
 
       {/* home page request call back section */}
-      <section className="container-max home-max__callback">
+      <section className="container-max home__callback-max">
         <div className="container home__callback">
           {/* call back text */}
-          <div className="callback-text">
+          <div className="home__callback-text">
             <h2>Why Choose Us</h2>
             <p>
               Our amazing team of Highend Autocare is highly experienced and
@@ -107,7 +107,7 @@ const Home = () => {
           </div>
 
           {/* callback form */}
-          <div className="callback-form">
+          <div className="home__callback-form">
             <h2>Request Callback</h2>
             <CallbackForm />
           </div>
