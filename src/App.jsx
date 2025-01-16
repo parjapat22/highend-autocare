@@ -1,25 +1,24 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TopBanner from "./components/topbanner/TopBanner";
-import NavBar from "./components/navbar/NavBa";
-import Home from "./pages/home/Home";
-import Services from "./pages/services/Services";
-import Contact from "./pages/contact/Contact";
-import Footer from "./components/footer/Footer";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import AppLayout from "./ui/AppLayout";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <TopBanner />
-      <NavBar />
-
       <Routes>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route exact path="/services" element={<Services />}></Route>
-        <Route exact path="/contact" element={<Contact />}></Route>
-      </Routes>
+        <Route element={<AppLayout />}>
+          <Route index element={<Navigate replace to="home" />} />
+          <Route path="home" element={<Home />} />
 
-      <Footer />
+          <Route path="services" element={<Services />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
+        </Route>
+
+        {/* <Route path="*" element={<PageNotFound />} /> */}
+      </Routes>
     </BrowserRouter>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-import Logo from "../../assets/nav-logo.png";
+import Logo from "../assets/nav-logo.png";
 
-const NavBa = () => {
+const NavBar = () => {
   return (
     <nav>
       <section className="container-max navbar-max">
@@ -18,9 +18,11 @@ const NavBa = () => {
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
+
             <li>
               <NavLink to="/services">Services</NavLink>
             </li>
+
             <li>
               <NavLink to="/contact">Contact us</NavLink>
             </li>
@@ -31,4 +33,4 @@ const NavBa = () => {
   );
 };
 
-export default NavBa;
+export default NavBar;
