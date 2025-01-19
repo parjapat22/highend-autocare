@@ -41,7 +41,7 @@ const Home = () => {
               <FaLocationDot />
             </div>
 
-            <h2>Address</h2>
+            <h3>Address</h3>
             <p>
               71 Kremzow Road, Brendale <br />
               Brisbane, QLD, 4500
@@ -54,7 +54,7 @@ const Home = () => {
               <FaBusinessTime />
             </div>
 
-            <h2>Working Hours</h2>
+            <h3>Working Hours</h3>
             <p>Mon - Fri: 8:00am - 5:00pm</p>
             <p>Saturday: 8:00am - 2:00pm</p>
             <p>Sunday & Public Holidays: Closed</p>
@@ -66,7 +66,7 @@ const Home = () => {
               <FaPhone />
             </div>
 
-            <h2>Make an appointment</h2>
+            <h3>Make an appointment</h3>
             <p>Baggi: 0435 267 495</p>
             <p>Harry: 0412 999 187</p>
             <p>Workshop: 0466 232 206</p>

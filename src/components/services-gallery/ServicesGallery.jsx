@@ -11,32 +11,32 @@ const ServicesGallery = () => {
     <div className={`${styles.containerGallery}`}>
       <div className={styles.galleryCard}>
         <img src={ATS} alt="logo" />
-        <h3>Auto Transmission Service</h3>
+        <h4>Auto Transmission Service</h4>
       </div>
 
       <div className={styles.galleryCard}>
         <img src={brake} alt="logo" />
-        <h3>Brake Repair Pads & Rotors</h3>
+        <h4>Brake Repair Pads & Rotors</h4>
       </div>
 
       <div className={styles.galleryCard}>
         <img src={COI} alt="logo" />
-        <h3>COI for Uber, Taxi & Trucks</h3>
+        <h4>COI for Uber, Taxi & Trucks</h4>
       </div>
 
       <div className={styles.galleryCard}>
         <img src={Diagnosis} alt="logo" />
-        <h3>System Diagnosis & Repair</h3>
+        <h4>System Diagnosis & Repair</h4>
       </div>
 
       <div className={styles.galleryCard}>
         <img src={LogBook} alt="logo" />
-        <h3>Log Book Service</h3>
+        <h4>Log Book Service</h4>
       </div>
 
       <div className={styles.galleryCard}>
         <img src={WheelBalancing} alt="logo" />
-        <h3>Tyres & Wheel Balancing</h3>
+        <h4>Tyres & Wheel Balancing</h4>
       </div>
     </div>
   );

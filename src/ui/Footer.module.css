@@ -15,7 +15,7 @@
 }
 
 .footerCol1 {
-  width: 45%;
+  width: 50%;
 }
 
 .footerCol2 {
@@ -25,7 +25,7 @@
 .colIconText {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 /* row 1 col 1 */
@@ -34,21 +34,22 @@
 }
 
 .col1Text p {
-  font-size: 1.1vw;
-}
-
-.col1Icon {
   font-size: 2rem;
 }
 
 .col1Icon a {
   color: #0000ff;
   text-decoration: none;
+  font-size: 3rem;
 }
 
 /* row 1 col2 */
+.colIconText p {
+  font-size: 2rem;
+}
+
 .col2Icon {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 
 .col2Text a {

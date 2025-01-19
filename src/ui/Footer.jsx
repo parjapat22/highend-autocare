@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Footer.module.css";
 import Logo from "../assets/footer-logo.png";
 import { FaFacebook } from "react-icons/fa6";
@@ -41,9 +40,7 @@ const Footer = () => {
                 </a>
               </div>
 
-              <div>
-                <h2>Facebook</h2>
-              </div>
+              <h2>Facebook</h2>
             </div>
           </div>
 
@@ -120,8 +117,8 @@ const Footer = () => {
       {/* footer row 2 */}
       <section className={styles.sectionRow2}>
         <div className={`container ${styles.containerRow2}`}>
-          <small>Copyright &copy; 2021 Highend Autocare</small>
-          <small>Developed by Basant Parjapat</small>
+          <p>Copyright &copy; 2021 Highend Autocare</p>
+          <p>Developed by Basant Parjapat</p>
         </div>
       </section>
     </footer>

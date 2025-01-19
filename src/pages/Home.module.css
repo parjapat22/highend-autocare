@@ -3,13 +3,9 @@
   flex-direction: column;
 }
 
-.containerHeader h1 {
-  font-size: 2rem;
-}
-
 .containerHeader p {
   width: 75%;
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding: 1rem 0;
 }
 
@@ -23,41 +19,44 @@
   background: var(--color-primary);
   justify-content: space-around;
   align-items: flex-start;
-  padding: 3rem;
 }
 
 .infoCol {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .infoIcon {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ffff00;
 }
 
-.infoCol h2 {
-  font-size: 1.8rem;
+.infoCol h3 {
   color: #f1f1f1;
 }
 
 .infoCol p {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #f1f1f1;
 }
 
 /* services section */
-.containerServices {
+.containerServices.containerServices {
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.containerServices h2 {
+  text-align: center;
 }
 
 .servicesInfo {
   margin: 1rem 0rem;
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 /* callback section */
@@ -67,7 +66,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .callbackText {
@@ -77,15 +76,11 @@
   margin-inline: auto;
 }
 
-.callbackText h2 {
-  font-size: 2rem;
-}
-
 .callbackText p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .callbackForm h2 {
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 0.5rem 0rem;
+  color: #f1f1f1;
 }

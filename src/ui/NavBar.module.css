@@ -14,7 +14,7 @@
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .navMenu li {
@@ -27,7 +27,7 @@
 }
 
 .navMenu a {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 

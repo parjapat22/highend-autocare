@@ -19,28 +19,28 @@
 
 .metaIcon {
   color: #0000ff;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .hoursIcon {
   color: #0000ff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .addressIcon,
 .contactIcon {
   color: #0000ff;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .hours p,
 .address p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #f1f1f1;
 }
 
 .contact p {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #f1f1f1;
 }
 
