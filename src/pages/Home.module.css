@@ -19,7 +19,7 @@
 }
 
 /* key info section */
-.containerInfo {
+.containerInfo.containerInfo {
   background: var(--color-primary);
   justify-content: space-around;
   align-items: flex-start;
