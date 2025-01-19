@@ -1,12 +1,11 @@
-import React from "react";
-
 const Services = () => {
   return (
     <main>
-      <section className="container">
-        <div>
+      <section>
+        <div className="container">
           <h2>Services!</h2>
-          Read more about us at :
+          <p>Read more about us at :</p>
+
           <a href="https://www.abcgiutgasgka.org/about/">
             https://www.abchajgjdas.org/about/
           </a>

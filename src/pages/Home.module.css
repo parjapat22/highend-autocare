@@ -1,0 +1,91 @@
+/* home page banner section */
+.containerHeader {
+  flex-direction: column;
+}
+
+.containerHeader h1 {
+  font-size: 2rem;
+}
+
+.containerHeader p {
+  width: 75%;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+.headerImg {
+  width: 60%;
+  padding: 2rem 0;
+}
+
+/* key info section */
+.containerInfo {
+  background: var(--color-primary);
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infoIcon {
+  font-size: 3rem;
+  color: #ffff00;
+}
+
+.infoCol h2 {
+  font-size: 1.8rem;
+  color: #f1f1f1;
+}
+
+.infoCol p {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+}
+
+/* services section */
+.containerServices {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.servicesInfo {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* callback section */
+.containerCallback {
+  background-image: url(../assets/callback.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  gap: 1rem;
+}
+
+.callbackText {
+  padding: 1rem;
+  width: 40%;
+  color: #f1f1f1;
+  margin-inline: auto;
+}
+
+.callbackText h2 {
+  font-size: 2rem;
+}
+
+.callbackText p {
+  font-size: 1.5rem;
+}
+
+.callbackForm h2 {
+  padding: 0.5rem;
+  font-size: 2rem;
+}

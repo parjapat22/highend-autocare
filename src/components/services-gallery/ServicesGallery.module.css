@@ -1,11 +1,10 @@
-.services__gallery {
+.containerGallery {
   display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
 }
 
-.services__gallery-card {
+.galleryCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +12,6 @@
   gap: 0.5rem;
 }
 
-.services__gallery-card img {
+.galleryCard img {
   height: 100%;
 }

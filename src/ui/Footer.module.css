@@ -1,0 +1,66 @@
+/* row 1 */
+.sectionRow1 {
+  background: var(--color-primary);
+}
+
+.containerRow1 {
+  padding: 1rem 0;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footerCol1 {
+  width: 45%;
+}
+
+.footerCol2 {
+  width: 25%;
+}
+
+.colIconText {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* row 1 col 1 */
+.col1Logo {
+  width: 30%;
+}
+
+.col1Text p {
+  font-size: 1.1vw;
+}
+
+.col1Icon {
+  font-size: 2rem;
+}
+
+.col1Icon a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+/* row 1 col2 */
+.col2Icon {
+  font-size: 1.3rem;
+}
+
+.col2Text a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* row 2 */
+.sectionRow2 {
+  background: #7a7a7a;
+}
+
+.containerRow2 {
+  padding: 1rem 0rem;
+}

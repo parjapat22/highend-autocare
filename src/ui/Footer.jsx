@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import styles from "./Footer.module.css";
 import Logo from "../assets/footer-logo.png";
 import { FaFacebook } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
@@ -11,17 +11,17 @@ const Footer = () => {
   return (
     <footer>
       {/* footer row 1 */}
-      <section className="container-max footer__row1-max">
-        <div className="container footer__row1">
+      <section className={styles.sectionRow1}>
+        <div className={`container ${styles.containerRow1}`}>
           {/* footer row 1 column 1 */}
-          <div className="footer__col1">
-            <div className="footer__logo">
+          <div className={`${styles.footerCol} ${styles.footerCol1}`}>
+            <div className={`${styles.col1Logo}`}>
               <a href="/">
                 <img src={Logo} alt="logo" />
               </a>
             </div>
 
-            <div className="footer__text">
+            <div className={`${styles.col1Text}`}>
               <p>
                 Mechanical repairs & servicing on all makes & models of
                 automobiles. We use quality parts to comply with your new car
@@ -30,8 +30,8 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="footer__social">
-              <div className="icon-link footer__col1-icon">
+            <div className={`${styles.colIconText}`}>
+              <div className={`${styles.col1Icon}`}>
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
@@ -41,68 +41,75 @@ const Footer = () => {
                 </a>
               </div>
 
-              <div className="footer__social-text">
+              <div>
                 <h2>Facebook</h2>
               </div>
             </div>
           </div>
 
           {/* footer row 1 column 2 */}
-          <div className="footer__col2">
+          <div className={`${styles.footerCol} ${styles.footerCol2}`}>
             <h2>Our Information</h2>
 
             {/* address */}
-            <div className="footer__social">
-              <div className="footer__col2-icon">
+            <div className={`${styles.colIconText}`}>
+              <div className={`${styles.col2Icon}`}>
                 <FaLocationDot />
               </div>
-              <div className="footer__address-text">
+
+              <div className={`${styles.col2Text}`}>
                 <a
                   href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p>71 Kremzow Road, Brendale</p>
-                  <p>Brisbane, QLD, 4500</p>
+                  <p>
+                    71 Kremzow Road, Brendale <br />
+                    Brisbane, QLD, 4500
+                  </p>
                 </a>
               </div>
             </div>
 
             {/* contact */}
-            <div className="footer__social">
-              <div className="footer__col2-icon">
+            <div className={`${styles.colIconText}`}>
+              <div className={`${styles.col2Icon}`}>
                 <FaPhone />
               </div>
-              <div className="footer__contact-text">
+
+              <div className={`${styles.col2Text}`}>
                 <p>+61 466 232 206</p>
               </div>
             </div>
 
             {/* email */}
-            <div className="footer__social">
-              <div className="footer__col2-icon">
+            <div className={`${styles.colIconText}`}>
+              <div className={`${styles.col2Icon}`}>
                 <HiOutlineMail />
               </div>
-              <div className="footer__email-text">
+
+              <div className={`${styles.col2Text}`}>
                 <p>admin@highendautocare.com</p>
               </div>
             </div>
 
             {/* workshop hours */}
-            <div className="footer__social">
-              <div className="footer__col2-icon">
+            <div className={`${styles.colIconText}`}>
+              <div className={`${styles.col2Icon}`}>
                 <FaRegClock />
               </div>
-              <div className="footer__hours-text">
+
+              <div className={`${styles.col2Text}`}>
                 <p>Mon - Fri: 8:00am - 5:00pm</p>
               </div>
             </div>
 
-            <div className="footer__social">
-              <div className="footer__col2-icon">
+            <div className={`${styles.colIconText}`}>
+              <div className={`${styles.col2Icon}`}>
                 <FaRegClock />
               </div>
-              <div className="footer__hours-text">
+
+              <div className={`${styles.col2Text}`}>
                 <p>Saturday: 8:00am - 2:00pm</p>
               </div>
             </div>
@@ -111,8 +118,8 @@ const Footer = () => {
       </section>
 
       {/* footer row 2 */}
-      <section className="container-max footer__row2-max">
-        <div className="container footer__row2">
+      <section className={styles.sectionRow2}>
+        <div className={`container ${styles.containerRow2}`}>
           <small>Copyright &copy; 2021 Highend Autocare</small>
           <small>Developed by Basant Parjapat</small>
         </div>

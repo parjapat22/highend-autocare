@@ -1,0 +1,37 @@
+.sectionNav {
+  background: #f9f9f9;
+}
+
+.containerNav {
+  padding: 1rem 0rem;
+}
+
+.navLogo {
+  width: 15%;
+}
+
+.navMenu {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.navMenu li {
+  list-style: none;
+  transition: var(--transition);
+}
+
+.navMenu li:hover {
+  transform: translateY(-5px);
+}
+
+.navMenu a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navMenu :global(.active) {
+  color: var(--color-primary);
+  text-decoration: underline;
+}

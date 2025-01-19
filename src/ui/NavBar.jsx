@@ -1,22 +1,21 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import "./navbar.css";
+import styles from "./NavBar.module.css";
 import Logo from "../assets/nav-logo.png";
 
 const NavBar = () => {
   return (
     <nav>
-      <section className="container-max navbar-max">
-        <div className="container navbar">
-          {/* nav menu */}
-          <a href="/" className="nav__logo">
+      <section className={styles.sectionNav}>
+        <div className={`container ${styles.containerNav}`}>
+          {/* logo */}
+          <a href="/" className={styles.navLogo}>
             <img src={Logo} alt="logo" />
           </a>
 
-          {/* nav menu */}
-          <ul className="nav__menu">
+          {/* menu */}
+          <ul className={styles.navMenu}>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/home">Home</NavLink>
             </li>
 
             <li>

@@ -1,0 +1,49 @@
+.sectionBanner {
+  background: var(--color-primary);
+}
+
+.containerBanner {
+  padding: 1rem 0rem;
+}
+
+.bannerRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bannerIcon {
+  display: flex;
+  align-items: center;
+}
+
+.metaIcon {
+  color: #0000ff;
+  font-size: 3rem;
+}
+
+.hoursIcon {
+  color: #0000ff;
+  font-size: 1.2rem;
+}
+
+.addressIcon,
+.contactIcon {
+  color: #0000ff;
+  font-size: 2rem;
+}
+
+.hours p,
+.address p {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+}
+
+.contact p {
+  font-size: 2rem;
+  color: #f1f1f1;
+}
+
+.address a {
+  text-decoration: none;
+}

@@ -1,12 +1,11 @@
-import React from "react";
 import { useEffect } from "react";
-import "./home.css";
+import styles from "./Home.module.css";
 import Car from "../assets/homepage_car.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaBusinessTime } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import ServicesGallery from "../components/services-gallery/ServicesGallery";
-import CallbackForm from "../components/forms/CallbackForm";
+import Form from "../components/forms/Form";
 
 const Home = () => {
   useEffect(() => {
@@ -16,8 +15,8 @@ const Home = () => {
   return (
     <main>
       {/* home page header section */}
-      <section className="container-max home__header-max">
-        <div className="container home__header">
+      <section>
+        <div className={`container ${styles.containerHeader}`}>
           <h1>We Care About Your Car</h1>
 
           <p>
@@ -27,30 +26,34 @@ const Home = () => {
           </p>
 
           {/* car image */}
-          <div className="home__header-img">
+          <div className={styles.headerImg}>
             <img src={Car} alt="car" />
           </div>
         </div>
       </section>
 
       {/* home page key info section */}
-      <section className="container-max home__info-max">
-        <div className="container home__info">
+      <section>
+        <div className={`container ${styles.containerInfo}`}>
           {/* address */}
-          <div className="home__info-address">
-            <div className="home__info-icon">
+          <div className={`${styles.infoCol}`}>
+            <div className={styles.infoIcon}>
               <FaLocationDot />
             </div>
+
             <h2>Address</h2>
-            <p>71 Kremzow Road, Brendale</p>
-            <p>Brisbane, QLD, 4500</p>
+            <p>
+              71 Kremzow Road, Brendale <br />
+              Brisbane, QLD, 4500
+            </p>
           </div>
 
           {/* hours */}
-          <div className="home__info-hours">
-            <div className="home__info-icon">
+          <div className={`${styles.infoCol}`}>
+            <div className={styles.infoIcon}>
               <FaBusinessTime />
             </div>
+
             <h2>Working Hours</h2>
             <p>Mon - Fri: 8:00am - 5:00pm</p>
             <p>Saturday: 8:00am - 2:00pm</p>
@@ -58,10 +61,11 @@ const Home = () => {
           </div>
 
           {/* appointment */}
-          <div className="home__info-appointment">
-            <div className="home__info-icon">
+          <div className={`${styles.infoCol}`}>
+            <div className={styles.infoIcon}>
               <FaPhone />
             </div>
+
             <h2>Make an appointment</h2>
             <p>Baggi: 0435 267 495</p>
             <p>Harry: 0412 999 187</p>
@@ -70,17 +74,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* home page services section */}
-      <section className="container-max home__services-max">
-        <div className="container home__services">
+      {/* services section */}
+      <section>
+        <div className={`container ${styles.containerServices}`}>
           <h2>Our Services</h2>
 
-          <div className="home__services-text">
+          <div className={styles.servicesInfo}>
             <p>
               Mechanical repairs & servicing on all makes & models of
               automobiles. We use quality parts to comply with your new car log
               book service & warranty.
             </p>
+
             <button type="button" className="btn">
               Find more
             </button>
@@ -92,10 +97,10 @@ const Home = () => {
       </section>
 
       {/* home page request call back section */}
-      <section className="container-max home__callback-max">
-        <div className="container home__callback">
+      <section>
+        <div className={`container ${styles.containerCallback}`}>
           {/* call back text */}
-          <div className="home__callback-text">
+          <div className={styles.callbackText}>
             <h2>Why Choose Us</h2>
             <p>
               Our amazing team of Highend Autocare is highly experienced and
@@ -107,9 +112,9 @@ const Home = () => {
           </div>
 
           {/* callback form */}
-          <div className="home__callback-form">
+          <div className={styles.callbackForm}>
             <h2>Request Callback</h2>
-            <CallbackForm />
+            <Form />
           </div>
         </div>
       </section>

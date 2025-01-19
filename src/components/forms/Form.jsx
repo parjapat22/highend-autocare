@@ -1,8 +1,7 @@
-import React from "react";
 import { useState } from "react";
-import "./callback-form.css";
+import styles from "./Form.module.css";
 
-const CallbackForm = () => {
+const Form = () => {
   const [inputs, setInputs] = useState({});
 
   const handleChange = (event) => {
@@ -17,7 +16,7 @@ const CallbackForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form__callback">
+    <form onSubmit={handleSubmit} className={styles.containerForm}>
       <label>
         Your name *
         <input
@@ -73,4 +72,4 @@ const CallbackForm = () => {
   );
 };
 
-export default CallbackForm;
+export default Form;

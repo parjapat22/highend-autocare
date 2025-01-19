@@ -1,16 +1,16 @@
-.form__callback {
+.containerForm {
   padding: 1rem;
   background: #6b86d0;
 }
 
-.form__callback label {
+.containerForm label {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.form__callback input,
-.form__callback textarea {
+.containerForm input,
+.containerForm textarea {
   border: 1px solid #444;
 }
