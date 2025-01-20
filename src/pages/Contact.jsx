@@ -1,6 +1,5 @@
-import React from "react";
-import styles from "./Contact.module.css";
 import Form from "../components/forms/Form";
+import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (

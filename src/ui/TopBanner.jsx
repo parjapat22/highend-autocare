@@ -1,8 +1,9 @@
-import styles from "./TopBanner.module.css";
 import { FaFacebook } from "react-icons/fa6";
 import { FaRegClock } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
+
+import styles from "./TopBanner.module.css";
 
 const TopBanner = () => {
   return (

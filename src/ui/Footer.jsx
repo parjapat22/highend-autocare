@@ -1,10 +1,11 @@
-import styles from "./Footer.module.css";
 import Logo from "../assets/footer-logo.png";
+
 import { FaFacebook } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
-import { FaRegClock } from "react-icons/fa6";
+
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
