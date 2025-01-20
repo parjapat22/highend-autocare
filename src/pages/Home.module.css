@@ -60,12 +60,15 @@
 }
 
 /* callback section */
-.containerCallback {
+.sectionCallback {
   background-image: url(../assets/callback.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.containerCallback.containerCallback {
   gap: 5rem;
 }
 

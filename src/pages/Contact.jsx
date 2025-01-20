@@ -9,6 +9,7 @@ const Contact = () => {
         <div className={`container`}>
           {/* column 1 contact form */}
           <div>
+            <h2>Get in Touch</h2>
             <Form />
           </div>
 

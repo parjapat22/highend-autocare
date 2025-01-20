@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../Button";
 import styles from "./Form.module.css";
 
 const Form = () => {
@@ -18,7 +19,7 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit} className={styles.containerForm}>
       <label>
-        Your name *
+        Name *
         <input
           type="text"
           name="username"
@@ -30,7 +31,18 @@ const Form = () => {
       </label>
 
       <label>
-        Your email *
+        Mobile *
+        <input
+          type="text"
+          name="email"
+          value={inputs.email || ""}
+          onChange={handleChange}
+          required
+        />
+      </label>
+
+      <label>
+        Email *
         <input
           type="text"
           name="email"
@@ -52,7 +64,7 @@ const Form = () => {
       </label>
 
       <label>
-        Your message *
+        Message *
         <textarea
           type="text"
           name="message"
@@ -65,9 +77,7 @@ const Form = () => {
         />
       </label>
 
-      <button type="submit" className="btn">
-        Send
-      </button>
+      <Button>Send</Button>
     </form>
   );
 };

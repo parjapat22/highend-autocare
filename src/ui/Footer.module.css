@@ -1,10 +1,12 @@
 /* row 1 */
 .sectionRow1 {
-  background: var(--color-primary);
+  background: #f0f0f0;
 }
 
 .containerRow1.containerRow1 {
-  padding: 1rem 0;
+  padding: 3rem 0rem;
+  align-items: flex-start;
+  gap: 5rem;
 }
 
 .footerCol {
@@ -15,11 +17,7 @@
 }
 
 .footerCol1 {
-  width: 50%;
-}
-
-.footerCol2 {
-  width: 25%;
+  width: 40%;
 }
 
 .colIconText {
@@ -28,7 +26,6 @@
   gap: 1rem;
 }
 
-/* row 1 col 1 */
 .col1Logo {
   width: 30%;
 }
@@ -38,18 +35,20 @@
 }
 
 .col1Icon a {
+  display: flex;
   color: #0000ff;
   text-decoration: none;
   font-size: 3rem;
 }
 
-/* row 1 col2 */
+/* row 1 col2 & col 3*/
 .colIconText p {
   font-size: 2rem;
 }
 
 .col2Icon {
   font-size: 1.8rem;
+  display: flex;
 }
 
 .col2Text a {
@@ -59,7 +58,7 @@
 
 /* row 2 */
 .sectionRow2 {
-  background: #7a7a7a;
+  background: var(--color-primary);
 }
 
 .containerRow2.containerRow2 {

@@ -1,5 +1,5 @@
 .sectionNav {
-  background: #f9f9f9;
+  background: #f0f0f0;
 }
 
 .containerNav.containerNav {
@@ -23,12 +23,13 @@
 }
 
 .navMenu li:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 .navMenu a {
   font-size: 2.5rem;
   text-decoration: none;
+  color: #e14a4a;
 }
 
 .navMenu :global(.active) {

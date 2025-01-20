@@ -22,7 +22,7 @@ const TopBanner = () => {
             </div>
 
             <div className={styles.hours}>
-              <p>Mon-Fri: 8:00am - 5:00pm</p>
+              <p>Mon - Fri: 8:00am - 5:00pm</p>
             </div>
           </div>
 

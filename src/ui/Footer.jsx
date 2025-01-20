@@ -40,13 +40,13 @@ const Footer = () => {
                 </a>
               </div>
 
-              <h2>Facebook</h2>
+              <p>update icon</p>
             </div>
           </div>
 
           {/* footer row 1 column 2 */}
-          <div className={`${styles.footerCol} ${styles.footerCol2}`}>
-            <h2>Our Information</h2>
+          <div className={`${styles.footerCol}`}>
+            <h3>Contact Us</h3>
 
             {/* address */}
             <div className={`${styles.colIconText}`}>
@@ -89,23 +89,19 @@ const Footer = () => {
                 <p>admin@highendautocare.com</p>
               </div>
             </div>
+          </div>
 
-            {/* workshop hours */}
+          {/* footer row 1 column 3 */}
+          <div className={`${styles.footerCol}`}>
+            <h3>Opening Hours</h3>
+
             <div className={`${styles.colIconText}`}>
-              <div className={`${styles.col2Icon}`}>
-                <FaRegClock />
-              </div>
-
               <div className={`${styles.col2Text}`}>
                 <p>Mon - Fri: 8:00am - 5:00pm</p>
               </div>
             </div>
 
             <div className={`${styles.colIconText}`}>
-              <div className={`${styles.col2Icon}`}>
-                <FaRegClock />
-              </div>
-
               <div className={`${styles.col2Text}`}>
                 <p>Saturday: 8:00am - 2:00pm</p>
               </div>

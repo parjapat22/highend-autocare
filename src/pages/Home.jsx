@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import styles from "./Home.module.css";
 import Car from "../assets/homepage_car.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaBusinessTime } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import ServicesGallery from "../components/services-gallery/ServicesGallery";
 import Form from "../components/forms/Form";
+import Button from "../components/Button";
+import styles from "./Home.module.css";
 
 const Home = () => {
   useEffect(() => {
@@ -86,9 +87,7 @@ const Home = () => {
               book service & warranty.
             </p>
 
-            <button type="button" className="btn">
-              Find more
-            </button>
+            <Button>Find more</Button>
           </div>
 
           {/* home services gallery */}
@@ -97,7 +96,7 @@ const Home = () => {
       </section>
 
       {/* home page request call back section */}
-      <section>
+      <section className={`${styles.sectionCallback}`}>
         <div className={`container ${styles.containerCallback}`}>
           {/* call back text */}
           <div className={styles.callbackText}>
