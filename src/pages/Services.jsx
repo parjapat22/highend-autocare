@@ -1,14 +1,14 @@
+import ServicesGallery from "../components/ServicesGallery";
+import styles from "./Services.module.css";
+
 const Services = () => {
   return (
     <main>
       <section>
-        <div className="container">
-          <h2>Services!</h2>
-          <p>Read more about us at :</p>
+        <div className={`container ${styles.containerServices}`}>
+          <h2>Our Services</h2>
 
-          <a href="https://www.abcgiutgasgka.org/about/">
-            https://www.abchajgjdas.org/about/
-          </a>
+          <ServicesGallery />
         </div>
       </section>
     </main>

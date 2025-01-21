@@ -12,6 +12,8 @@ import { FaPhone } from "react-icons/fa6";
 import styles from "./Home.module.css";
 
 const Home = () => {
+  // enable home page to load from top
+  // page jumps to middle due to form component
   useEffect(() => {
     window.scroll(0, 0);
   }, []);

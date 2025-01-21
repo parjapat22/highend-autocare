@@ -21,7 +21,7 @@ function ServicesSlider() {
     <Swiper
       spaceBetween={30}
       slidesPerView={3}
-      centeredSlides={true}
+      centeredSlides={false}
       autoplay={{
         delay: 1500,
         disableOnInteraction: true,

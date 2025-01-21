@@ -29,20 +29,6 @@ const Footer = () => {
                 Brisbane.
               </p>
             </div>
-
-            <div className={`${styles.colIconText}`}>
-              <div className={`${styles.col1Icon}`}>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook />
-                </a>
-              </div>
-
-              <p>update icon</p>
-            </div>
           </div>
 
           {/* footer row 1 column 2 */}
@@ -75,7 +61,7 @@ const Footer = () => {
                 <FaPhone />
               </div>
 
-              <div className={`${styles.col2Text}`}>
+              <div>
                 <p>+61 466 232 206</p>
               </div>
             </div>
@@ -86,7 +72,7 @@ const Footer = () => {
                 <HiOutlineMail />
               </div>
 
-              <div className={`${styles.col2Text}`}>
+              <div>
                 <p>admin@highendautocare.com</p>
               </div>
             </div>
@@ -96,15 +82,23 @@ const Footer = () => {
           <div className={`${styles.footerCol}`}>
             <h3>Opening Hours</h3>
 
-            <div className={`${styles.colIconText}`}>
-              <div className={`${styles.col2Text}`}>
+            <div className={`${styles.footerCol3}`}>
+              <div className={`${styles.col3Text}`}>
                 <p>Mon - Fri: 8:00am - 5:00pm</p>
-              </div>
-            </div>
-
-            <div className={`${styles.colIconText}`}>
-              <div className={`${styles.col2Text}`}>
                 <p>Saturday: 8:00am - 2:00pm</p>
+              </div>
+
+              {/* social */}
+              <div className={`${styles.social}`}>
+                <p>Follow us on</p>
+
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
               </div>
             </div>
           </div>

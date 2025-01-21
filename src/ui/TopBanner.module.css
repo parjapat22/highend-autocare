@@ -14,28 +14,33 @@
 
 .bannerIcon {
   display: flex;
+  color: var(--color-icon1);
 }
 
 .metaIcon {
-  color: #0000ff;
   font-size: 5rem;
 }
 
 .hoursIcon {
-  color: #0000ff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .addressIcon,
 .contactIcon {
-  color: #0000ff;
   font-size: 3rem;
+}
+
+.containerBanner p {
+  color: var(--color-text2);
 }
 
 .hours p,
 .address p {
   font-size: 2rem;
-  color: #f1f1f1;
+}
+
+.contact p {
+  font-size: 3rem;
 }
 
 .address a {
@@ -44,9 +49,4 @@
 
 .address a:hover {
   text-decoration: none;
-}
-
-.contact p {
-  font-size: 3rem;
-  color: #f1f1f1;
 }

@@ -1,6 +1,6 @@
 /* row 1 */
 .sectionRow1 {
-  background: #f0f0f0;
+  background: var(--color-headfoot);
 }
 
 .containerRow1.containerRow1 {
@@ -12,7 +12,6 @@
 .footerCol {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -20,40 +19,52 @@
   width: 40%;
 }
 
+.col1Logo {
+  width: 30%;
+}
+
+.footerCol p,
+.footerCol h3 {
+  color: var(--color-text1);
+}
+
+/* row 1 col2 */
 .colIconText {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.col1Logo {
-  width: 30%;
-}
-
-.col1Text p {
-  font-size: 2rem;
-}
-
-.col1Icon a {
-  display: flex;
-  color: #0000ff;
-  text-decoration: none;
-  font-size: 3rem;
-}
-
-/* row 1 col2 & col 3*/
-.colIconText p {
-  font-size: 2rem;
-}
-
 .col2Icon {
-  font-size: 1.8rem;
   display: flex;
+  font-size: 1.8rem;
+  color: var(--color-icon2);
 }
 
 .col2Text a {
-  color: #000000;
   text-decoration: none;
+}
+
+/* row 1 col 3 */
+.footerCol3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 25vh;
+}
+
+.col3Text,
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social a {
+  display: flex;
+  color: var(--color-icon2);
+  font-size: 3rem;
 }
 
 /* row 2 */
@@ -63,4 +74,8 @@
 
 .containerRow2.containerRow2 {
   padding: 1rem 0rem;
+}
+
+.containerRow2 p {
+  color: var(--color-text2);
 }

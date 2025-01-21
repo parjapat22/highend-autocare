@@ -1,12 +1,11 @@
 /* home page banner section */
 .containerHeader {
   flex-direction: column;
+  gap: 1rem;
 }
 
 .containerHeader p {
   width: 75%;
-  font-size: 2rem;
-  padding: 1rem 0;
 }
 
 .headerImg {
@@ -29,22 +28,17 @@
 
 .infoIcon {
   font-size: 5rem;
-  color: #ffff00;
+  color: var(--color-icon1);
 }
 
-.infoCol h3 {
-  color: #f1f1f1;
-}
-
+.infoCol h3,
 .infoCol p {
-  font-size: 1.8rem;
-  color: #f1f1f1;
+  color: var(--color-text2);
 }
 
 /* services section */
 .containerServices.containerServices {
   flex-direction: column;
-  align-items: stretch;
   gap: 1rem;
 }
 
@@ -75,15 +69,15 @@
 .callbackText {
   padding: 1rem;
   width: 40%;
-  color: #f1f1f1;
+  color: var(--color-text2);
   margin-inline: auto;
 }
 
 .callbackText p {
-  font-size: 1.8rem;
+  padding: 1rem 0;
 }
 
 .callbackForm h2 {
   padding: 0.5rem 0rem;
-  color: #f1f1f1;
+  color: var(--color-text2);
 }

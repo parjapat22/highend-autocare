@@ -1,6 +1,6 @@
 .containerForm {
   padding: 2rem;
-  background: gainsboro;
+  background: var(--color-body);
 }
 
 .containerForm label {
@@ -8,10 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .containerForm input,
 .containerForm textarea {
-  border: 1px solid #444;
+  border: 1px solid var(--color-text1);
 }

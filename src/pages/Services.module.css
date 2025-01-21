@@ -1,0 +1,8 @@
+.containerServices {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.containerServices h2 {
+  padding-bottom: 2rem;
+}
