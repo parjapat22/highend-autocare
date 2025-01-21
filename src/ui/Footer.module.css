@@ -5,7 +5,7 @@
 
 .containerRow1.containerRow1 {
   padding: 3rem 0rem;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 5rem;
 }
 
@@ -47,11 +47,7 @@
 
 /* row 1 col 3 */
 .footerCol3 {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
-  height: 25vh;
 }
 
 .col3Text,

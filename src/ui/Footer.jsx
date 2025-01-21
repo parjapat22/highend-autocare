@@ -79,27 +79,25 @@ const Footer = () => {
           </div>
 
           {/* footer row 1 column 3 */}
-          <div className={`${styles.footerCol}`}>
-            <h3>Opening Hours</h3>
+          <div className={`${styles.footerCol} ${styles.footerCol3}`}>
+            <div className={`${styles.col3Text}`}>
+              <h3>Opening Hours</h3>
 
-            <div className={`${styles.footerCol3}`}>
-              <div className={`${styles.col3Text}`}>
-                <p>Mon - Fri: 8:00am - 5:00pm</p>
-                <p>Saturday: 8:00am - 2:00pm</p>
-              </div>
+              <p>Mon - Fri: 8:00am - 5:00pm</p>
+              <p>Saturday: 8:00am - 2:00pm</p>
+            </div>
 
-              {/* social */}
-              <div className={`${styles.social}`}>
-                <p>Follow us on</p>
+            {/* social */}
+            <div className={`${styles.social}`}>
+              <p>Follow us on</p>
 
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook />
-                </a>
-              </div>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
             </div>
           </div>
         </div>
