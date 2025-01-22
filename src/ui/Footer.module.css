@@ -58,7 +58,14 @@
 .social {
   display: flex;
   flex-direction: column;
+}
+
+.col3Text {
   gap: 1rem;
+}
+
+.social {
+  gap: 0.5rem;
 }
 
 .socialIcons {

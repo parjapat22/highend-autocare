@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import ServicesSlider from "../components/ServicesSlider";
 import Form from "../components/forms/Form";
@@ -17,6 +18,8 @@ const Home = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <main>
@@ -86,13 +89,18 @@ const Home = () => {
           <h2>Our Services</h2>
 
           <div className={styles.servicesInfo}>
-            <p>
-              Mechanical repairs & servicing on all makes & models of
-              automobiles. We use quality parts to comply with your new car log
-              book service & warranty.
-            </p>
+            <div className={styles.servicesText}>
+              <p>
+                Mechanical repairs & servicing on all makes & models of
+                automobiles. We use quality parts to comply with your new car
+                log book service & warranty.
+              </p>
+            </div>
 
-            <Button>Find more</Button>
+            {/* div required to keep the correct aspect ratio of button */}
+            <div>
+              <Button onClick={() => navigate("/services")}>Find more</Button>
+            </div>
           </div>
 
           {/* home services gallery */}

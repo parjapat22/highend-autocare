@@ -48,10 +48,14 @@
 }
 
 .servicesInfo {
-  margin: 1rem 0rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 2rem;
+}
+
+.servicesText {
+  width: 90%;
 }
 
 /* callback section */
