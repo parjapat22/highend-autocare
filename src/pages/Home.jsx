@@ -43,7 +43,7 @@ const Home = () => {
         <div className={`container ${styles.containerInfo}`}>
           {/* address */}
           <div className={`${styles.infoCol}`}>
-            <div className={styles.infoIcon}>
+            <div className={`${styles.infoIcon}`}>
               <FaLocationDot />
             </div>
 
@@ -56,7 +56,7 @@ const Home = () => {
 
           {/* hours */}
           <div className={`${styles.infoCol}`}>
-            <div className={styles.infoIcon}>
+            <div className={`${styles.infoIcon}`}>
               <FaBusinessTime />
             </div>
 
@@ -68,11 +68,11 @@ const Home = () => {
 
           {/* appointment */}
           <div className={`${styles.infoCol}`}>
-            <div className={styles.infoIcon}>
+            <div className={`${styles.infoIcon}`}>
               <FaPhone />
             </div>
 
-            <h3>Make an appointment</h3>
+            <h3>Make an Appointment</h3>
             <p>Baggi: 0435 267 495</p>
             <p>Harry: 0412 999 187</p>
             <p>Workshop: 0466 232 206</p>

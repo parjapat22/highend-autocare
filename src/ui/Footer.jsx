@@ -1,9 +1,9 @@
 import Logo from "../assets/footer-logo.png";
 
-import { FaFacebook } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
+import { FaFacebook } from "react-icons/fa6";
 
 import styles from "./Footer.module.css";
 
@@ -36,7 +36,7 @@ const Footer = () => {
             <h3>Contact Us</h3>
 
             {/* address */}
-            <div className={`${styles.colIconText}`}>
+            <div className={`${styles.rowIconText}`}>
               <div className={`${styles.col2Icon}`}>
                 <FaLocationDot />
               </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             {/* contact */}
-            <div className={`${styles.colIconText}`}>
+            <div className={`${styles.rowIconText}`}>
               <div className={`${styles.col2Icon}`}>
                 <FaPhone />
               </div>
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
 
             {/* email */}
-            <div className={`${styles.colIconText}`}>
+            <div className={`${styles.rowIconText}`}>
               <div className={`${styles.col2Icon}`}>
                 <HiOutlineMail />
               </div>
@@ -89,15 +89,23 @@ const Footer = () => {
 
             {/* social */}
             <div className={`${styles.social}`}>
-              <p>Follow us on</p>
+              <p>
+                <strong>Follow us on</strong>
+              </p>
 
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook />
-              </a>
+              <div className={`${styles.socialIcons}`}>
+                <div className={`${styles.socialIcon}`}>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebook />
+                  </a>
+                </div>
+
+                {/* add another icon in a new div here */}
+              </div>
             </div>
           </div>
         </div>

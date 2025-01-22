@@ -26,8 +26,9 @@
   gap: 1rem;
 }
 
-.infoIcon {
-  font-size: 5rem;
+.infoIcon svg {
+  width: 5rem;
+  height: 5rem;
   color: var(--color-icon1);
 }
 

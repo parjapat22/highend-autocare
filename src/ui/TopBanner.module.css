@@ -12,22 +12,29 @@
   gap: 1rem;
 }
 
-.bannerIcon {
+.bannerIcon,
+.bannerIcon a {
   display: flex;
+}
+
+.bannerIcon svg {
   color: var(--color-icon1);
 }
 
-.metaIcon {
-  font-size: 5rem;
+.metaIcon svg {
+  width: 5rem;
+  height: 5rem;
 }
 
-.hoursIcon {
-  font-size: 1.6rem;
+.hoursIcon svg {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
-.addressIcon,
-.contactIcon {
-  font-size: 3rem;
+.addressIcon svg,
+.contactIcon svg {
+  width: 3rem;
+  height: 3rem;
 }
 
 .containerBanner p {

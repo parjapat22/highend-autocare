@@ -29,7 +29,7 @@
 }
 
 /* row 1 col2 */
-.colIconText {
+.rowIconText {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -37,7 +37,11 @@
 
 .col2Icon {
   display: flex;
-  font-size: 1.8rem;
+}
+
+.col2Icon svg {
+  width: 2rem;
+  height: 2rem;
   color: var(--color-icon2);
 }
 
@@ -57,10 +61,27 @@
   gap: 1rem;
 }
 
-.social a {
+.socialIcons {
   display: flex;
-  color: var(--color-icon2);
-  font-size: 3rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialIcon {
+  display: flex;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-icon2);
+}
+
+.socialIcon a {
+  display: flex;
+}
+
+.socialIcon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-icon3);
 }
 
 /* row 2 */

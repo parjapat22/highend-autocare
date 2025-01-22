@@ -11,6 +11,7 @@
   font-size: 1.8rem;
 }
 
+.containerForm,
 .containerForm input,
 .containerForm textarea {
   border: 1px solid var(--color-text1);

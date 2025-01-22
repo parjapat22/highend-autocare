@@ -11,7 +11,13 @@ const TopBanner = () => {
       <div className={`container ${styles.containerBanner}`}>
         {/* column 1 meta icon*/}
         <div className={`${styles.bannerIcon} ${styles.metaIcon}`}>
-          <FaFacebook />
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
         </div>
 
         {/* column 2 workshop hours*/}
