@@ -4,6 +4,7 @@ import AppLayout from "./ui/AppLayout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import PageError from "./pages/PageError";
 
 const App = () => {
   return (
@@ -13,11 +14,11 @@ const App = () => {
           <Route index element={<Navigate replace to="home" />} />
           <Route path="home" element={<Home />} />
 
-          <Route path="services" element={<Services />}></Route>
-          <Route path="contact" element={<Contact />}></Route>
+          <Route path="services" element={<Services />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
 
-        {/* <Route path="*" element={<PageNotFound />} /> */}
+        <Route path="*" element={<PageError />} />
       </Routes>
     </BrowserRouter>
   );

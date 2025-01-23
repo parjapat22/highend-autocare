@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-  background: var(--color-body);
+  background: var(--color-card);
   padding-bottom: 1rem;
 }
 

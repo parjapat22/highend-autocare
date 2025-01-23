@@ -1,0 +1,17 @@
+.mainPageError {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionPageError {
+  background: var(--color-body);
+}
+
+.containerPageError.containerPageError {
+  background: var(--color-section);
+  border: 1px solid var(--color-headfoot);
+  border-radius: 1.5rem;
+  justify-content: space-around;
+}
