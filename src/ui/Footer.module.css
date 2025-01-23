@@ -46,7 +46,12 @@
 }
 
 .col2Text a {
+  color: var(--color-text1);
   text-decoration: none;
+}
+
+.col2Text a:hover {
+  text-decoration: underline;
 }
 
 /* row 1 col 3 */
@@ -86,8 +91,8 @@
 }
 
 .socialIcon svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   color: var(--color-icon3);
 }
 

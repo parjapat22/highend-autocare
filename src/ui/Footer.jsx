@@ -21,7 +21,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className={`${styles.col1Text}`}>
+            <div>
               <p>
                 Mechanical repairs & servicing on all makes & models of
                 automobiles. We use quality parts to comply with your new car
@@ -42,16 +42,17 @@ const Footer = () => {
               </div>
 
               <div className={`${styles.col2Text}`}>
-                <a
-                  href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p>
-                    71 Kremzow Road, Brendale <br />
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    71 Kremzow Road, Brendale
+                    <br />
                     Brisbane, QLD, 4500
-                  </p>
-                </a>
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -61,8 +62,16 @@ const Footer = () => {
                 <FaPhone />
               </div>
 
-              <div>
-                <p>+61 466 232 206</p>
+              <div className={styles.col2Text}>
+                <p>
+                  <a
+                    href="tel:+61466232206"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +61 466 232 206
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -72,8 +81,16 @@ const Footer = () => {
                 <HiOutlineMail />
               </div>
 
-              <div>
-                <p>admin@highendautocare.com</p>
+              <div className={styles.col2Text}>
+                <p>
+                  <a
+                    href="mailto:admin@highendautocare.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    admin@highendautocare.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

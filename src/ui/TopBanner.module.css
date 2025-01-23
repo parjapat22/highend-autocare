@@ -6,19 +6,8 @@
   padding: 1rem 0rem;
 }
 
-.bannerRow {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.bannerIcon,
-.bannerIcon a {
-  display: flex;
-}
-
 .bannerIcon svg {
-  color: var(--color-icon1);
+  color: var(--color-icon3);
 }
 
 .metaIcon svg {
@@ -37,23 +26,38 @@
   height: 3rem;
 }
 
-.containerBanner p {
+.rowIconText {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.metaIcon a,
+.bannerIcon {
+  display: flex;
+}
+
+.hours p,
+.address a,
+.contact a {
   color: var(--color-text2);
 }
 
 .hours p,
-.address p {
+.addresss a {
   font-size: 2rem;
 }
 
-.contact p {
+.contact a {
   font-size: 3rem;
 }
 
-.address a {
+.address a,
+.contact a {
   text-decoration: none;
 }
 
-.address a:hover {
-  text-decoration: none;
+.address a:hover,
+.contact a:hover {
+  text-decoration: underline;
 }

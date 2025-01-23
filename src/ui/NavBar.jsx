@@ -8,7 +8,7 @@ const NavBar = () => {
       <section className={styles.sectionNav}>
         <div className={`container ${styles.containerNav}`}>
           {/* logo */}
-          <a href="/" className={styles.navLogo}>
+          <a href="/" className={styles.logo}>
             <img src={Logo} alt="logo" />
           </a>
 

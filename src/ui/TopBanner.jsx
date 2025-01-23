@@ -23,7 +23,7 @@ const TopBanner = () => {
         {/* column 2 workshop hours*/}
         <div>
           {/* weekday hours */}
-          <div className={styles.bannerRow}>
+          <div className={styles.rowIconText}>
             <div className={`${styles.bannerIcon} ${styles.hoursIcon}`}>
               <FaRegClock />
             </div>
@@ -34,7 +34,7 @@ const TopBanner = () => {
           </div>
 
           {/* weekend hours */}
-          <div className={styles.bannerRow}>
+          <div className={styles.rowIconText}>
             <div className={`${styles.bannerIcon} ${styles.hoursIcon}`}>
               <FaRegClock />
             </div>
@@ -46,31 +46,42 @@ const TopBanner = () => {
         </div>
 
         {/* column 3 workshop address*/}
-        <div className={styles.bannerRow}>
+        <div className={styles.rowIconText}>
           <div className={`${styles.bannerIcon} ${styles.addressIcon}`}>
             <FaLocationDot />
           </div>
 
           <div className={styles.address}>
-            <a
-              href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>71 Kremzow Road, Brendale</p>
-              <p>Brisbane, QLD, 4500</p>
-            </a>
+            <p>
+              <a
+                href="https://maps.app.goo.gl/K21BN7RxWdnDNWDq6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                71 Kremzow Road, Brendale
+                <br />
+                Brisbane, QLD, 4500
+              </a>
+            </p>
           </div>
         </div>
 
         {/* column 4 contact number*/}
-        <div className={styles.bannerRow}>
+        <div className={styles.rowIconText}>
           <div className={`${styles.bannerIcon} ${styles.contactIcon}`}>
             <FaPhone />
           </div>
 
           <div className={styles.contact}>
-            <p>0466 232 206</p>
+            <p>
+              <a
+                href="tel:+61466232206"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                0466 232 206
+              </a>
+            </p>
           </div>
         </div>
       </div>
