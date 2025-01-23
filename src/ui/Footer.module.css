@@ -42,7 +42,7 @@
 .col2Icon svg {
   width: 2rem;
   height: 2rem;
-  color: var(--color-icon2);
+  color: var(--color-icon1);
 }
 
 .col2Text a {
@@ -83,7 +83,7 @@
   display: flex;
   padding: 1rem;
   border-radius: 50%;
-  background-color: var(--color-icon2);
+  background-color: var(--color-icon1);
 }
 
 .socialIcon a {

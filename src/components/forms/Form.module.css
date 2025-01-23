@@ -1,6 +1,6 @@
 .containerForm {
   padding: 2rem;
-  background: var(--color-body);
+  background: var(--color-section);
 }
 
 .containerForm label {
