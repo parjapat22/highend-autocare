@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <main>
       <section>
-        <div className={`container`}>
+        <div className={`container ${styles.containerContact}`}>
           {/* column 1 contact form */}
           <div>
             <h2>Get in Touch</h2>
