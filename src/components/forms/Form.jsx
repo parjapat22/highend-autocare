@@ -2,16 +2,18 @@ import { useState } from "react";
 import Button from "../Button";
 import styles from "./Form.module.css";
 
-function Form() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    mobile: "",
-    subject: "",
-    message: "",
-  });
+const initialFormData = {
+  name: "",
+  email: "",
+  mobile: "",
+  subject: "",
+  message: "",
+};
 
+function Form() {
+  const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
+  const [successMsg, setSuccessMsg] = useState(false);
 
   const isValidEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -43,13 +45,17 @@ function Form() {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // Form submission logic here
-      // console.log("Form submitted successfully!");
-    } else {
-      // console.log("Form submission failed due to validation errors.");
-    }
+      // success message on form submission
+      setSuccessMsg(true);
+      setTimeout(() => {
+        setSuccessMsg(false);
+      }, 2000);
 
-    // reset input fields
+      setFormData(initialFormData);
+    } else {
+      console.log(newErrors);
+      console.log("Form submission failed due to validation errors.");
+    }
   }
 
   function validateForm(data) {
@@ -83,7 +89,13 @@ function Form() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={styles.containerForm}>
+    <form
+      className={styles.containerForm}
+      // action="https://formsubmit.co/2c11cf966689d1ed3226ef0580a00918"
+      // method="POST"
+      onSubmit={handleSubmit}
+    >
+      {/* fields group 1 */}
       <div className={styles.groupFields}>
         <div className={styles.containerField}>
           <label>Name</label>
@@ -114,6 +126,7 @@ function Form() {
         </div>
       </div>
 
+      {/* fields group 2 */}
       <div className={styles.groupFields}>
         <div className={styles.containerField}>
           <label>Mobile</label>
@@ -126,7 +139,18 @@ function Form() {
           />
 
           {errors.mobile && (
-            <span className={styles.errorField}>{errors.mobile}</span>
+            <span className={styles.errorField}>
+              {errors.mobile.includes("invalid") ? (
+                <p>
+                  {errors.mobile}
+                  <br />
+                  Number should begin <br />
+                  with 04 and have 10 digits.
+                </p>
+              ) : (
+                errors.mobile
+              )}
+            </span>
           )}
         </div>
 
@@ -161,8 +185,13 @@ function Form() {
           <span className={styles.errorField}>{errors.message}</span>
         )}
       </div>
+      <Button type="submit">Send</Button>
 
-      <Button>Send</Button>
+      {successMsg && (
+        <p className={styles.successMsg}>
+          Your message has been sent successfully.
+        </p>
+      )}
     </form>
   );
 }

@@ -5,7 +5,7 @@ const ServicesGallery = () => {
   return (
     <div className={`${styles.containerGallery}`}>
       {services.map((service) => (
-        <div className={styles.galleryCard}>
+        <div className={styles.galleryCard} key={service.id}>
           <img src={service.image} alt={service.title} />
           <h4>{service.title}</h4>
         </div>

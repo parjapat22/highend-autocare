@@ -30,3 +30,9 @@
   color: var(--color-red);
   font-size: 1.6rem;
 }
+
+.successMsg {
+  display: flex;
+  margin-top: 2rem;
+  color: var(--color-green);
+}
