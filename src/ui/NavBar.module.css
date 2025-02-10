@@ -1,5 +1,5 @@
 .sectionNav {
-  background: var(--color-headfoot);
+  background-color: var(--color-secondary);
 }
 
 .containerNav.containerNav {
@@ -23,7 +23,7 @@
 }
 
 .navMenu li:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .navMenu a {

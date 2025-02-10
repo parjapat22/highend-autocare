@@ -1,7 +1,6 @@
-import { services } from "../data/sliderData";
 import styles from "./ServicesGallery.module.css";
 
-const ServicesGallery = () => {
+function ServicesGallery({ services }) {
   return (
     <div className={`${styles.containerGallery}`}>
       {services.map((service) => (
@@ -12,6 +11,6 @@ const ServicesGallery = () => {
       ))}
     </div>
   );
-};
+}
 
 export default ServicesGallery;

@@ -48,9 +48,11 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    71 Kremzow Road, Brendale
-                    <br />
-                    Brisbane, QLD, 4500
+                    <span>
+                      71 Kremzow Road, Brendale
+                      <br />
+                      Brisbane, QLD, 4500
+                    </span>
                   </a>
                 </p>
               </div>
@@ -69,7 +71,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +61 466 232 206
+                    <span>+61 466 232 206</span>
                   </a>
                 </p>
               </div>
@@ -88,7 +90,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    admin@highendautocare.com
+                    <span>admin@highendautocare.com</span>
                   </a>
                 </p>
               </div>
@@ -97,6 +99,7 @@ const Footer = () => {
 
           {/* footer row 1 column 3 */}
           <div className={`${styles.footerCol} ${styles.footerCol3}`}>
+            {/* opening hours */}
             <div className={`${styles.col3Text}`}>
               <h3>Opening Hours</h3>
 
@@ -131,8 +134,8 @@ const Footer = () => {
       {/* footer row 2 */}
       <section className={styles.sectionRow2}>
         <div className={`container ${styles.containerRow2}`}>
-          <p>Copyright &copy; 2021 Highend Autocare</p>
-          <p>Developed by Basant Parjapat</p>
+          <small>Copyright &copy; 2021 Highend Autocare</small>
+          <small>Developed by Basant Parjapat</small>
         </div>
       </section>
     </footer>

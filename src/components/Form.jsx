@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../Button";
+import Button from "./Button";
 import styles from "./Form.module.css";
 
 const initialFormData = {
@@ -47,10 +47,14 @@ function Form() {
     if (Object.keys(newErrors).length === 0) {
       // success message on form submission
       setSuccessMsg(true);
+
+      // data submission pending
+
       setTimeout(() => {
         setSuccessMsg(false);
       }, 2000);
 
+      // reset form
       setFormData(initialFormData);
     } else {
       console.log(newErrors);
@@ -135,7 +139,7 @@ function Form() {
             name="mobile"
             value={formData.mobile}
             onChange={handleChange}
-            placeholder="04xx000xxx"
+            placeholder="04xxxxxxxx"
           />
 
           {errors.mobile && (

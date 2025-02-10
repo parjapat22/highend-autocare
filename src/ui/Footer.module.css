@@ -1,6 +1,6 @@
 /* row 1 */
 .sectionRow1 {
-  background: var(--color-headfoot);
+  background-color: var(--color-secondary);
 }
 
 .containerRow1.containerRow1 {
@@ -17,6 +17,7 @@
 
 .footerCol1 {
   width: 40%;
+  text-align: justify;
 }
 
 .col1Logo {
@@ -98,7 +99,7 @@
 
 /* row 2 */
 .sectionRow2 {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .containerRow2.containerRow2 {

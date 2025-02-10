@@ -4,9 +4,9 @@ import AppLayout from "./ui/AppLayout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import PageError from "./pages/PageError";
+import ErrorPage from "./pages/ErrorPage";
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -18,10 +18,10 @@ const App = () => {
           <Route path="contact" element={<Contact />} />
         </Route>
 
-        <Route path="*" element={<PageError />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default App;

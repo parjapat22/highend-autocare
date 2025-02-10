@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import ServicesSlider from "../components/ServicesSlider";
-import Form from "../components/forms/Form";
+import { services } from "../data/servicesData";
+import Form from "../components/Form";
 
 import Car from "../assets/homepage_car.png";
 
@@ -12,7 +13,7 @@ import { FaPhone } from "react-icons/fa6";
 
 import styles from "./Home.module.css";
 
-const Home = () => {
+function Home() {
   // enable home page to load from top
   // page jumps to middle due to form component
   useEffect(() => {
@@ -104,7 +105,7 @@ const Home = () => {
           </div>
 
           {/* home services gallery */}
-          <ServicesSlider />
+          <ServicesSlider services={services} />
         </div>
       </section>
 
@@ -132,6 +133,6 @@ const Home = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Home;

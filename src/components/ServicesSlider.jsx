@@ -1,13 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { services } from "../data/sliderData";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./ServicesSlider.css";
 
-function ServicesSlider() {
+function ServicesSlider({ services }) {
   const singleSlide = services.map((service) => (
     <SwiperSlide key={service.id}>
       <div className="slide">

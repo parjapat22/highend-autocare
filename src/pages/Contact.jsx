@@ -1,7 +1,7 @@
-import Form from "../components/forms/Form";
+import Form from "../components/Form";
 import styles from "./Contact.module.css";
 
-const Contact = () => {
+function Contact() {
   return (
     <main>
       <section>
@@ -21,12 +21,13 @@ const Contact = () => {
               title="workshop location map"
               tabIndex="0"
               loading="lazy"
-              referrerPolicy="no-referrer"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
       </section>
     </main>
   );
-};
+}
+
 export default Contact;

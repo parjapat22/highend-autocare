@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/nav-logo.png";
 import styles from "./NavBar.module.css";
 
-const NavBar = () => {
+function NavBar() {
   return (
     <nav>
       <section className={styles.sectionNav}>
@@ -30,6 +30,6 @@ const NavBar = () => {
       </section>
     </nav>
   );
-};
+}
 
 export default NavBar;

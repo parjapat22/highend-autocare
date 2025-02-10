@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import styles from "./PageError.module.css";
+import styles from "./ErrorPage.module.css";
 
-function PageError() {
+function ErrorPage() {
   const navigate = useNavigate();
 
   return (
@@ -18,4 +18,4 @@ function PageError() {
   );
 }
 
-export default PageError;
+export default ErrorPage;

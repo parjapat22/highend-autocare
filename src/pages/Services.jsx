@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 
 import ServicesGallery from "../components/ServicesGallery";
+import { services } from "../data/servicesData";
 import styles from "./Services.module.css";
 
-const Services = () => {
+function Services() {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -14,10 +15,11 @@ const Services = () => {
         <div className={`container ${styles.containerServices}`}>
           <h2>Our Services</h2>
 
-          <ServicesGallery />
+          <ServicesGallery services={services} />
         </div>
       </section>
     </main>
   );
-};
+}
+
 export default Services;
